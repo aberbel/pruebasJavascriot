@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "happy-dom": "^20.6.1",
     "standard": "^17.1.2",
     "vitest": "^4.0.18"
   },
@@ -8,9 +9,9 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-"eslintConfig": {
-  "extends": "./node_modules/standard/eslintrc.json"
-},
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  },
   "scripts": {
     "test": "vitest",
     "coverage": "vitest run --coverage"
