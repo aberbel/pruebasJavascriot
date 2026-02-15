@@ -8,11 +8,18 @@ Escribe una función que al pasarle un número, devuelva:
 - El número, en caso contrario
 */
 
-const fizzbuzz = (num) => {
+const fizzbuzz = () => {
+  if (typeof number !== 'number') throw new Error('El parametro debe ser un número');
 
 };
 describe('fizzbuzz', () => {
   it('debería ser una función', () => {
     expect(typeof fizzbuzz).toBe('function');
+}),
+it('debería throw si no tiene un número como parámetro', () => { 
+  expect(()=>fizzbuzz()).toThrow();
+}),
+it('debería tener un mensaje de error específico si no tiene un número como parámetro', () => { 
+  expect(()=>fizzbuzz()).toThrow(/número/);
 })
 });

@@ -23,3 +23,9 @@ git rm -r --cached folder
 </pre>
 - Crear carpeta test
 - Crear primer test: fizzbuzz.test.js
+<pre>
+nmp run test
+</pre>
+<pre>
+  expect(()=>fizzbuzz()).toThrow(/número/); Que contenga la palabra número
+</pre>
